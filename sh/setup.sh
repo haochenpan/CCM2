@@ -19,7 +19,7 @@ install_basics() {
   sudo apt-get update -y
   sudo apt-get install -y python3.6
   sudo ln -s -f /usr/bin/python3.6 /usr/bin/python3
-
+  pip3 install pyyaml==5.3.1
   cd
 }
 

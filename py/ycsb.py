@@ -1,4 +1,5 @@
 import sys
+from conf import *
 
 
 def generate_command():
@@ -13,7 +14,6 @@ def generate_command():
     num_of_records = 1000
     num_of_operations = 1000
     consistency_level = "ONE"  # for load and run, read and write
-    hosts_arr = ["192.168.197.130", "192.168.197.131"]
 
     usage = """
     usage:
@@ -47,7 +47,7 @@ def generate_command():
     if len(sys.argv) < 2 or len(sys.argv) > 10:
         print(usage)
         exit(0)
-    hosts = ",".join(hosts_arr)
+    hosts = ",".join(cass_hosts)
     for i, item in enumerate(sys.argv):
         if i == 0:
             pass

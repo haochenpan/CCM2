@@ -16,9 +16,11 @@
 # # print(ycsb_bin)
 # # print(cqlsh_bin)
 # # print(nodetool_bin)
-# """
-#     PARAMETERS
-# """
-#
-# public_ips = []
-# private_ips = []
+
+"""
+    PARAMETERS
+"""
+
+interface = 'ens4'  # 14.04: eth0, 16.04: ens4, 18.04: ens33; use the ifconfig commmand to confirm
+cass_hosts = ["192.168.197.130", "192.168.197.131"]  # internal ips of Cassandra instances
+hosts = ",".join(cass_hosts)
