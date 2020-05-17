@@ -17,7 +17,7 @@ def generate_cass_yaml():
     cassandra_yaml['auto_snapshot'] = False
     cassandra_yaml['seed_provider'][0]['parameters'][0]['seeds'] = hosts
 
-    with open('~/cassandra/conf/cassandra.yaml', 'w') as outFile:
+    with open('/root/cassandra/conf/cassandra.yaml', 'w') as outFile:
         documents = yaml.dump(cassandra_yaml, outFile)
 
 
