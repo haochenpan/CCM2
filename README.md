@@ -51,7 +51,7 @@ cd ~/cassandra &&  ./bin/cqlsh -e <internal-ip> "CREATE TABLE ycsb.usertable ( y
 
 ### generate ycsb commands
 ```shell script
-# assume parameters in modify ~/CCM2/py/conf.py are setted
+# assume parameters in modify ~/CCM2/py/conf.py are set
 # step 1: modify ~/CCM2/py/ycsb.py to set parameters 
 
 # step 2: try
