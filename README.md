@@ -39,8 +39,8 @@ python3 ~/CCM2/py/changeYaml.py
 ### create the table
 ```shell script
 # select a internal ip from shown in ./notetool status
-cd ~/cassandra &&  ./bin/cqlsh -e <internal-ip> "CREATE KEYSPACE ycsb WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor': <num-of-servers>};"
-cd ~/cassandra &&  ./bin/cqlsh -e <internal-ip> "CREATE TABLE ycsb.usertable ( y_id varchar primary key, field0 varchar);"
+cd ~/cassandra &&  ./bin/cqlsh <internal-ip> -e "CREATE KEYSPACE ycsb WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor': <num-of-servers>};"
+cd ~/cassandra &&  ./bin/cqlsh <internal-ip> -e "CREATE TABLE ycsb.usertable ( y_id varchar primary key, field0 varchar);"
 
 #e.g.
 ./bin/cqlsh 10.142.0.30 -e "create keyspace ycsb WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor': 1};"
