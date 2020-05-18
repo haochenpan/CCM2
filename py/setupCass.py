@@ -2,9 +2,9 @@ import subprocess
 import sys
 
 branch_dict = {
-    'ZezhiWang': ['abd', 'abdOpt', 'sbq'],
+    'ZezhiWang': [],
     'yingjianwu199868': ['treasNoLog', 'OreasNoLog', 'newCausal'],
-    'Dariusrussellkish': ['bsr', 'abd-machine-time']
+    'Dariusrussellkish': ['abd', 'abdOpt', 'sbq', 'bsr', 'abd-machine-time']
 }
 
 usage = """
